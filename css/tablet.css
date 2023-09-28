@@ -1,0 +1,12 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  /* BENEFITS */
+  .benefits-list {
+    column-gap: 24px;
+  }
+  .benefits-item {
+    width: 351px;
+  }
+}

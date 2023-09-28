@@ -43,25 +43,9 @@ button {
 a {
   color: currentColor;
 }
-.list {
-  list-style-type: none;
-}
 
 .link {
   text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 body {
@@ -70,17 +54,6 @@ body {
   background-color: var(--white-background);
 }
 
-.container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* outline: solid red; */
-}
-.section {
-  padding-bottom: 120px;
-}
 /* ======================COMPONENTS======================= */
 .logo {
   color: var(--primary-brand);
@@ -120,19 +93,6 @@ body {
   background-color: var(--pressed-state);
 }
 
-.item-title {
-  color: var(--dark);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-
-.item-description {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
 .item-description-theme-dark {
   color: var(--text);
 }
@@ -259,31 +219,7 @@ body {
 }
 
 /* ======================/HERO======================= */
-/* ======================BENEFITS======================= */
-.benefits-section {
-  padding-top: 120px;
-}
-.benefits-list {
-  display: flex;
-  gap: 24px;
-}
-.benefits-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 264px;
-  height: 112px;
-  border-radius: 4px;
-  background: var(--light);
-  margin-bottom: 8px;
-}
-.benefits-title {
-  margin-bottom: 8px;
-}
-.benefits-item {
-  width: 264px;
-}
-/* ======================/BENEFITS======================= */
+
 /* ======================WHAT ARE WE DOING======================= */
 
 .services-list {
