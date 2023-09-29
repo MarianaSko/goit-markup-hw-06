@@ -43,4 +43,31 @@
     font-weight: 500;
     line-height: 1.2;
   }
+
+  /* WHAT ARE WE DOING */
+  .services-section {
+    display: block;
+  }
+  .services-list {
+    display: flex;
+    gap: 24px;
+  }
+  /* TEAM SECTION */
+  .team-section {
+    padding-top: 120px;
+  }
+  /* CUSTOMERS SECTION */
+  .customers-section {
+    padding-top: 120px;
+  }
+  /* FOOTER */
+  .page-footer {
+    padding: 100px 0;
+  }
+  .footer-left-side {
+    margin-right: 120px;
+  }
+  .footer-middle {
+    margin-right: 80px;
+  }
 }

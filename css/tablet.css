@@ -2,6 +2,9 @@
   .container {
     max-width: 768px;
   }
+  .item-description {
+    font-weight: 500;
+  }
   /* HERO SECTION */
   .hero-title {
     font-size: 56px;
@@ -15,5 +18,42 @@
   }
   .benefits-item {
     width: 351px;
+  }
+  /* TEAM SECTION */
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+  /* CUSTOMERS SECTION */
+  .customers-list {
+    column-gap: 24px;
+  }
+  .customers-item {
+    width: 168px;
+    height: 88px;
+  }
+  /* FOOTER */
+  .footer-container {
+    justify-content: flex-start;
+    padding-left: 108px;
+  }
+  .footer-left-side {
+    margin-right: 24px;
+    align-items: flex-start;
+  }
+  .footer-item {
+    max-width: 264px;
+  }
+  .footer-form {
+    gap: 24px;
+  }
+  .footer-form-input {
+    width: 264px;
+  }
+  .footer-middle {
+    align-items: flex-start;
+  }
+  .footer-right-side {
+    align-items: flex-start;
   }
 }
