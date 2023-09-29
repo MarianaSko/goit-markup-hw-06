@@ -6,6 +6,17 @@
   .section {
     padding-bottom: 120px;
   }
+  .item-description {
+    font-weight: 400;
+  }
+  /* HERO SECTION */
+  .hero-section {
+    padding: 188px 0;
+    max-width: 1440px;
+  }
+  .hero-title {
+    margin-bottom: 48px;
+  }
   /* BENEFITS */
   .benefits-section {
     padding-top: 120px;
@@ -31,8 +42,5 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-  }
-  .item-description {
-    font-weight: 400;
   }
 }
