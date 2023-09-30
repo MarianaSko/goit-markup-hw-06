@@ -2,7 +2,83 @@
   .container {
     max-width: 768px;
   }
+  /* HEADER */
+  .menu-toggle {
+    display: none;
+  }
+  .contacts-info {
+    display: flex;
+    font-style: normal;
+  }
+  .page-nav {
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+  .header-logo {
+    padding-bottom: 24px;
+    margin-right: 120px;
+  }
+  .menu-link {
+    position: relative;
+    display: block;
+    padding: 24px 0;
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-link:hover,
+  .menu-link:focus {
+    color: var(--pressed-state);
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contacts-link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+
+    letter-spacing: 0.04em;
+    padding: 6px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contacts-link:hover,
+  .contacts-link:focus {
+    color: var(--pressed-state);
+  }
+  .current {
+    color: var(--pressed-state);
+  }
+  .current::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--pressed-state);
+    bottom: -1px;
+    border-radius: 2px;
+  }
   /* HERO SECTION */
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero_tab.jpg);
+  }
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -58,5 +134,14 @@
     padding-left: 24px;
     padding-right: 24px;
     width: 408px;
+  }
+}
+@media screen and (max-width: 1157px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero_tab@2x.jpg);
   }
 }

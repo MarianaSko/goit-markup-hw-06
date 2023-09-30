@@ -17,6 +17,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -55,6 +58,11 @@
             </li>
           </ul>
         </address>
+        <button class="menu-toggle js-open-menu" type="button">
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-toggle"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -85,10 +93,15 @@
                 <div class="projects-picture-wrapper">
                   <img
                     class="projects-picture"
-                    src="./images/banking-app-min.jpg"
+                    srcset="
+                      ./images/portfolio/img_1.jpg    1x,
+                      ./images/portfolio/img_1@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img_1.jpg"
                     alt="Banking App"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
 
                   <p class="overlay-text">
@@ -112,10 +125,15 @@
                 <div class="projects-picture-wrapper">
                   <img
                     class="projects-picture"
-                    src="./images/cashless-payment-min.jpg"
+                    srcset="
+                      ./images/portfolio/img_2.jpg    1x,
+                      ./images/portfolio/img_2@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img_2.jpg"
                     alt="Cashless Payment"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
 
                   <p class="overlay-text">
@@ -138,10 +156,15 @@
                 <div class="projects-picture-wrapper">
                   <img
                     class="projects-picture"
-                    src="./images/meditation-app-min.jpg"
+                    srcset="
+                      ./images/portfolio/img_3.jpg    1x,
+                      ./images/portfolio/img_3@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img_3.jpg"
                     alt="Meditation App"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
 
                   <p class="overlay-text">
@@ -163,10 +186,15 @@
                 <div class="projects-picture-wrapper">
                   <img
                     class="projects-picture"
-                    src="./images/taxi-service-min.jpg"
+                    srcset="
+                      ./images/portfolio/img_4.jpg    1x,
+                      ./images/portfolio/img_4@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img_4.jpg"
                     alt="Taxi Service"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
 
                   <p class="overlay-text">
@@ -188,10 +216,15 @@
                 <div class="projects-picture-wrapper">
                   <img
                     class="projects-picture"
-                    src="./images/screen-illustrations-min.jpg"
+                    srcset="
+                      ./images/portfolio/img_5.jpg    1x,
+                      ./images/portfolio/img_5@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img_5.jpg"
                     alt="Screen Illustrations"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
 
                   <p class="overlay-text">
@@ -215,10 +248,15 @@
                 <div class="projects-picture-wrapper">
                   <img
                     class="projects-picture"
-                    src="./images/online-courses-min.jpg"
+                    srcset="
+                      ./images/portfolio/img_6.jpg    1x,
+                      ./images/portfolio/img_6@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img_6.jpg"
                     alt="Online Courses"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
 
                   <p class="overlay-text">
@@ -240,10 +278,15 @@
                 <div class="projects-picture-wrapper">
                   <img
                     class="projects-picture"
-                    src="./images/instagram-stories-min.jpg"
+                    srcset="
+                      ./images/portfolio/img_7.jpg    1x,
+                      ./images/portfolio/img_7@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img_7.jpg"
                     alt="Instagram Stories"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
 
                   <p class="overlay-text">
@@ -267,10 +310,15 @@
                 <div class="projects-picture-wrapper">
                   <img
                     class="projects-picture"
-                    src="./images/organic-food-min.jpg"
+                    srcset="
+                      ./images/portfolio/img_8.jpg    1x,
+                      ./images/portfolio/img_8@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img_8.jpg"
                     alt="Organic Food"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
 
                   <p class="overlay-text">
@@ -292,10 +340,15 @@
                 <div class="projects-picture-wrapper">
                   <img
                     class="projects-picture"
-                    src="./images/fresh-coffee-min.jpg"
+                    srcset="
+                      ./images/portfolio/img_9.jpg    1x,
+                      ./images/portfolio/img_9@2x.jpg 2x
+                    "
+                    src="./images/portfolio/img_9.jpg"
                     alt="Fresh Coffee"
                     width="360"
                     height="300"
+                    loading="lazy"
                   />
 
                   <p class="overlay-text">
@@ -384,5 +437,69 @@
         </div>
       </div>
     </footer>
+    <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="modal-close-btn" type="button">
+        <svg class="modal-close-icon js-close-menu" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-menu-link link">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-menu-link link current"
+            >Portfolio</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts-list list">
+        <li class="mobile-contacts-item accent">
+          <a href="tel:+110001111111" class="mobile-contacts-link link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-contacts-item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts-link link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials-list list">
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">
+            <svg class="mobile-socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

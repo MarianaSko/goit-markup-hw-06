@@ -9,10 +9,30 @@
   .item-description {
     font-weight: 400;
   }
+  /* HEADER */
+  .contacts {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-logo {
+    margin-right: 76px;
+
+    padding: 25px 0;
+  }
+  .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+  }
   /* HERO SECTION */
   .hero-section {
     padding: 188px 0;
-    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero_desk.jpg);
   }
   .hero-title {
     margin-bottom: 48px;
@@ -69,5 +89,14 @@
   }
   .footer-middle {
     margin-right: 80px;
+  }
+}
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero_desk@2x.jpg);
   }
 }
