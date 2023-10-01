@@ -93,9 +93,11 @@
   }
   .footer-left-side {
     margin-right: 120px;
+    margin-bottom: 0;
   }
   .footer-middle {
     margin-right: 80px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {

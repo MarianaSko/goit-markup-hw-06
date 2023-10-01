@@ -712,6 +712,11 @@ body {
   position: relative;
   overflow: hidden;
 }
+.projects-picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .projects-wrapper {
   border: 1px solid var(--accent);
   border-top: none;
@@ -804,6 +809,11 @@ body {
   border-radius: 50%;
   flex-shrink: 0;
   background-color: var(--primary-brand);
+}
+.mobile-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-socials-icon {
