@@ -92,6 +92,9 @@
   .benefits-item {
     width: 351px;
   }
+  .benefits-item > .item-title {
+    text-align: start;
+  }
   /* TEAM SECTION */
   .team-list {
     row-gap: 64px;
@@ -104,6 +107,20 @@
   .customers-item {
     width: 168px;
     height: 88px;
+  }
+  /* PORTFOLIO */
+  .portfolio-section {
+    padding-top: 64px;
+  }
+  .portfolio-filter {
+    justify-content: center;
+    width: 100%;
+  }
+  .filter-btn {
+    padding: 12px 24px;
+  }
+  .projects-item {
+    width: calc((100% - 24px) / 2);
   }
   /* FOOTER */
   .footer-container {

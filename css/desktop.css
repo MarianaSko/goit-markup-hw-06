@@ -80,6 +80,13 @@
   .customers-section {
     padding-top: 120px;
   }
+  /* PORTFOLIO */
+  .portfolio-section {
+    padding-top: 100px;
+  }
+  .projects-item {
+    width: calc((100% - 48px) / 3);
+  }
   /* FOOTER */
   .page-footer {
     padding: 100px 0;
