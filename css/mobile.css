@@ -693,7 +693,9 @@ body {
 }
 
 .projects-link:hover .overlay-text,
-.projects-link:focus .overlay-text {
+.projects-link:focus .overlay-text,
+.projects-link:focus-within .overlay-text,
+.projects-link:active .overlay-text {
   transform: translateY(0%);
 }
 
